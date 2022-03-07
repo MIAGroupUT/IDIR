@@ -8,11 +8,11 @@ Code for the MIDL 2022 paper [Implicit Neural Representations for Deformable Ima
 
 If you use this code, please cite our paper
 
-  @inproceedings{wolterink2021implicit,
-    title={Implicit Neural Representations for Deformable Image Registration},
-    author={Wolterink, Jelmer M and Zwienenberg, Jesse C and Brune, Christoph},
-    booktitle={Medical Imaging with Deep Learning 2022}
-    year={2022}
-  }
+    @inproceedings{wolterink2021implicit,
+      title={Implicit Neural Representations for Deformable Image Registration},
+      author={Wolterink, Jelmer M and Zwienenberg, Jesse C and Brune, Christoph},
+      booktitle={Medical Imaging with Deep Learning 2022}
+      year={2022}
+    }
 
 
