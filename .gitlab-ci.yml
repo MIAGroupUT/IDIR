@@ -1,0 +1,33 @@
+stages:
+  - testing
+
+run_static_pylint:
+  image: python:latest
+  stage: testing
+  before_script:
+    - pip install pylint
+  script:
+    - pylint src/ tests/
+
+run_static_flake8:
+  image: "python:latest"
+  stage: testing
+  before_script:
+    - pip install flake8
+  script:
+    - flake8 src tests --statistics --count  
+
+run_tests:
+  image: continuumio/miniconda3:latest
+  stage: testing
+  before_script:
+    - conda env create -f environment.yml -n test
+    - source activate test
+  script:
+    - python3 -m pytest --junitxml=report.xml --cov-report=html --cov=src .
+  artifacts:
+    paths: 
+      - coverage
+    expire_in: 30 days
+    reports:
+      junit: report.xml
