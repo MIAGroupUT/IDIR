@@ -43,5 +43,3 @@ If you use this code, please cite our MIDL 2022 paper
       booktitle={Medical Imaging with Deep Learning 2022}
       year={2022}
     }
-
-*This code base is in development, we plan to add 
